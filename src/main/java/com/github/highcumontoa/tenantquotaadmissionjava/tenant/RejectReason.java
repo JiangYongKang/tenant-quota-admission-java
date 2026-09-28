@@ -1,0 +1,17 @@
+package com.github.highcumontoa.tenantquotaadmissionjava.tenant;
+
+/** 准入拒绝 / 结果原因分类，每种原因都可区分、可解释。 */
+public enum RejectReason {
+    IDENTITY_MISSING,
+    IDENTITY_UNKNOWN,
+    TENANT_DISABLED,
+    SOURCE_CONFLICT,
+    QUOTA_EXHAUSTED,
+    THROTTLED_BY_POLICY,
+    DEGRADED_BY_POLICY,
+    DOWNSTREAM_BUSINESS_REJECTED,
+    DOWNSTREAM_TIMEOUT,
+    DOWNSTREAM_INTERNAL_FAILURE,
+    DOWNSTREAM_UNAVAILABLE,
+    DOWNSTREAM_UNCLASSIFIED
+}
