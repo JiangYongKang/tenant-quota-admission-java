@@ -1,0 +1,22 @@
+package com.github.highcumontoa.tenantquotaadmissionjava.common;
+
+/**
+ * 准入/执行全链路的可区分判定码。
+ */
+public enum DecisionCode {
+    TENANT_MISSING,
+    TENANT_UNKNOWN,
+    TENANT_DISABLED,
+    TENANT_SOURCE_CONFLICT,
+    TENANT_CREDENTIAL_MISMATCH,
+    ADMITTED,
+    QUOTA_EXHAUSTED,
+    DEGRADED,
+    DOWNSTREAM_SUCCESS,
+    DOWNSTREAM_BIZ_REJECTED,
+    DOWNSTREAM_TIMEOUT,
+    DOWNSTREAM_INTERNAL_ERROR,
+    DOWNSTREAM_UNAVAILABLE,
+    QUOTA_REFUNDED,
+    QUOTA_RETAINED
+}
